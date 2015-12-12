@@ -20,12 +20,12 @@ end
 --[[ Returns the object with all game states --]]
 function game_init.setInitGameState()
 	local game_info = {}
-	game_info.player1 = {}
-	game_info.player2 = {}
-	game_info.player1.cards = {}
-	game_info.player2.cards = {}
-	game_info.player1.score = 0
-	game_info.player2.score = 0
+	game_info.mainPlayer = {}
+	game_info.opponent = {}
+	game_info.mainPlayer.cards = {}
+	game_info.opponent.cards = {}
+	game_info.mainPlayer.score = 0
+	game_info.opponent.score = 0
 
 	return game_info
 end
